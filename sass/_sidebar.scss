@@ -1,0 +1,20 @@
+.sidebar{
+    background-color: $color-primary;
+    grid-row: 1 / -1;
+    grid-column: sidebar-start / sidebar-end;
+    padding: 2rem;
+    @media only screen and (max-width: $bp-large){
+        grid-column: 1/-1;
+        grid-row: 1 / 2;
+        padding: 1rem;
+    }
+    &__icon{
+        fill: green;
+        height: 4rem;
+        width: 4rem;
+        @media only screen and (max-width: $bp-large){
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+}
